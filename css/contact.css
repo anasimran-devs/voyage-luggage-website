@@ -1,0 +1,825 @@
+/* =========================================
+   CONTACT HERO
+========================================= */
+
+.contact-hero {
+    padding-top: 190px;
+    padding-bottom: 110px;
+
+    background: #eeeee9;
+}
+
+.contact-hero-content {
+    max-width: 950px;
+}
+
+.contact-hero h1 {
+    font-size: clamp(60px, 9vw, 115px);
+
+    line-height: .88;
+
+    letter-spacing: -6px;
+
+    font-weight: 800;
+
+    margin-bottom: 35px;
+}
+
+.contact-hero h1 span {
+    color: #777;
+}
+
+.contact-hero-content > p:last-child {
+    max-width: 550px;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+    padding: 120px 0;
+
+    background: #fff;
+}
+
+
+
+/* =========================================
+   CONTACT INFO
+========================================= */
+
+.contact-info {
+    padding-right: 40px;
+}
+
+.contact-info h2,
+.form-heading h2 {
+    font-size: clamp(40px, 5vw, 62px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.contact-info h2 span,
+.form-heading h2 span {
+    color: #777;
+}
+
+.contact-intro {
+    max-width: 450px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 45px;
+}
+
+
+
+/* =========================================
+   CONTACT DETAILS
+========================================= */
+
+.contact-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px 0;
+
+    border-top: 1px solid #ddd;
+
+    max-width: 480px;
+}
+
+.contact-detail:last-of-type {
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+
+    background: #eeeeea;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 18px;
+}
+
+.contact-detail > div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.contact-detail span {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #999;
+
+    font-weight: 700;
+}
+
+.contact-detail a,
+.contact-detail strong {
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+.contact-detail a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.contact-social {
+    padding-top: 30px;
+}
+
+.contact-social > span {
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #999;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.contact-social > div {
+    display: flex;
+
+    gap: 10px;
+}
+
+.contact-social a {
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid #ddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .3s ease;
+}
+
+.contact-social a:hover {
+    background: #111;
+
+    color: #fff;
+
+    border-color: #111;
+}
+
+
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form-wrapper {
+    background: #f7f7f5;
+
+    padding: 50px;
+
+    border: 1px solid #e2e2de;
+}
+
+.form-heading {
+    margin-bottom: 35px;
+}
+
+.form-heading h2 {
+    font-size: 42px;
+}
+
+
+
+/* Form Group */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.form-group label {
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    background: #fff;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    padding: 14px 15px;
+
+    font-size: 11px;
+
+    color: #222;
+
+    transition: .3s ease;
+}
+
+.form-group input,
+.form-group select {
+    height: 48px;
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 130px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #111;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+
+
+/* Submit */
+
+.contact-submit {
+    width: 100%;
+
+    border: none;
+
+    background: #111;
+
+    color: #fff;
+
+    padding: 17px 25px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    transition: .3s ease;
+}
+
+.contact-submit:hover {
+    background: #333;
+}
+
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq-section {
+    padding: 110px 0 120px;
+
+    background: #f7f7f5;
+}
+
+.faq-list {
+    max-width: 900px;
+
+    border-top: 1px solid #ddd;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    width: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    padding: 25px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.faq-question i {
+    font-size: 18px;
+
+    transition: .3s ease;
+}
+
+.faq-answer {
+    display: none;
+
+    padding: 0 50px 25px 0;
+}
+
+.faq-answer p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+    max-width: 650px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .contact-hero {
+        padding-top: 160px;
+    }
+
+    .contact-info {
+        padding-right: 0;
+    }
+
+    .contact-form-wrapper {
+        margin-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .contact-hero {
+        padding-top: 145px;
+
+        padding-bottom: 75px;
+    }
+
+    .contact-hero h1 {
+        font-size: 62px;
+
+        letter-spacing: -3px;
+    }
+
+    .contact-section,
+    .faq-section {
+        padding: 80px 0;
+    }
+
+    .contact-form-wrapper {
+        padding: 35px 25px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .contact-hero h1 {
+        font-size: 50px;
+    }
+
+    .form-heading h2 {
+        font-size: 38px;
+    }
+
+}
+/* =========================================
+   CONTACT PAGE ANIMATIONS & ENHANCEMENTS
+========================================= */
+
+/* Hero Animation */
+
+.contact-hero-content {
+    animation: contactHeroUp .9s ease both;
+}
+
+.contact-hero-content .section-label {
+    animation: contactFadeUp .7s ease .1s both;
+}
+
+.contact-hero h1 {
+    animation: contactFadeUp .8s ease .2s both;
+}
+
+.contact-hero-content > p:last-child {
+    animation: contactFadeUp .8s ease .35s both;
+}
+
+
+/* Contact Info */
+
+.contact-info {
+    animation: contactFadeUp .8s ease both;
+}
+
+
+/* Contact Details */
+
+.contact-detail {
+    transition:
+        transform .35s ease,
+        padding-left .35s ease,
+        background .35s ease;
+}
+
+.contact-detail:hover {
+    transform: translateX(6px);
+    padding-left: 8px;
+}
+
+.contact-detail:hover .contact-icon {
+    background: #111;
+    color: #fff;
+    transform: rotate(-5deg);
+}
+
+.contact-icon {
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+/* Social Icons */
+
+.contact-social a {
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.contact-social a:hover {
+    transform: translateY(-4px);
+}
+
+
+/* Form */
+
+.contact-form-wrapper {
+    animation: contactFormIn .9s ease .15s both;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.contact-form-wrapper:hover {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .06);
+}
+
+
+/* Form Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    transition:
+        border-color .3s ease,
+        box-shadow .3s ease,
+        transform .3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #111;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 0, 0, .04);
+
+    transform: translateY(-1px);
+}
+
+
+/* Submit Button */
+
+.contact-submit {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-submit i {
+    transition: transform .3s ease;
+}
+
+.contact-submit:hover i {
+    transform: translateX(5px);
+}
+
+
+/* FAQ */
+
+.faq-item {
+    transition: background .3s ease;
+}
+
+.faq-question {
+    transition:
+        padding-left .3s ease,
+        color .3s ease;
+}
+
+.faq-question:hover {
+    padding-left: 8px;
+}
+
+.faq-question i {
+    transition:
+        transform .3s ease,
+        background .3s ease;
+}
+
+
+/* FAQ Answer */
+
+.faq-answer {
+    animation: faqOpen .35s ease both;
+}
+
+
+/* =========================================
+   KEYFRAMES
+========================================= */
+
+@keyframes contactHeroUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes contactFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes contactFormIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes faqOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .contact-detail:hover {
+        transform: none;
+        padding-left: 0;
+    }
+
+    .contact-form-wrapper:hover {
+        box-shadow: none;
+    }
+
+}
+/* =========================================
+   FORM SUCCESS MESSAGE
+========================================= */
+
+.form-success {
+    display: none;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 20px;
+
+    padding: 16px 18px;
+
+    background: #eeeeea;
+
+    border: 1px solid #d8d8d3;
+
+    animation: successMessage .4s ease both;
+}
+
+.form-success.show {
+    display: flex;
+}
+
+.form-success > i {
+    font-size: 24px;
+}
+
+.form-success div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.form-success strong {
+    font-size: 12px;
+}
+
+.form-success span {
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+/* Animation */
+
+@keyframes successMessage {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+/* =========================================
+   CONTACT — MOBILE HORIZONTAL OVERFLOW FIX
+========================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.contact-hero,
+.contact-section,
+.faq-section {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.contact-hero-content,
+.contact-info,
+.contact-form-wrapper,
+.faq-list {
+    max-width: 100%;
+}
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .contact-hero {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contact-hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+        overflow-wrap: break-word;
+    }
+
+    .contact-hero-content > p:last-child {
+        max-width: 100%;
+    }
+
+    .contact-form-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}

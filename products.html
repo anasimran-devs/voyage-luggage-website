@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop — Voyage</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Products CSS -->
+    <link rel="stylesheet" href="css/products.css">
+
+</head>
+
+
+<body>
+
+    <div id="navbar"></div>
+
+<!-- ================= PAGE HERO ================= -->
+
+<section class="products-hero">
+
+    <div class="container">
+
+        <div class="products-hero-content">
+
+            <p class="section-label">
+                THE COLLECTION
+            </p>
+
+            <h1>
+                Travel
+                <span>Essentials.</span>
+            </h1>
+
+            <p>
+                Explore our collection of premium luggage,
+                travel bags and everyday essentials designed
+                for every journey.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section">
+
+    <div class="container">
+
+        <!-- ================= PRODUCT SEARCH ================= -->
+
+        <div class="shop-search">
+
+            <i class="bi bi-search"></i>
+
+            <input
+                type="text"
+                id="productSearch"
+                placeholder="Search products..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="clearSearch"
+                title="Clear Search">
+
+                <i class="bi bi-x-lg"></i>
+
+            </button>
+
+        </div>
+            
+        <!-- TOP BAR -->
+
+        <div class="products-topbar">
+
+            <div>
+
+                <p class="products-count">
+                    Showing <strong id="productCount">12</strong> products
+                </p>
+
+            </div>
+
+
+            <div class="products-controls">
+
+                <button class="filter-btn">
+
+                    <i class="bi bi-sliders"></i>
+
+                    Filter
+
+                </button>
+
+
+                <select class="sort-select">
+
+                    <option value="">
+                        Sort by
+                    </option>
+
+                    <option value="featured">
+                        Featured
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="new">
+                        Newest
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CATEGORY FILTER -->
+
+        <div class="category-filters">
+
+            <button class="filter-category active">
+                All
+            </button>
+
+            <button class="filter-category">
+                Suitcases
+            </button>
+
+            <button class="filter-category">
+                Carry On
+            </button>
+
+            <button class="filter-category">
+                Backpacks
+            </button>
+
+            <button class="filter-category">
+                Travel Bags
+            </button>
+
+            <button class="filter-category">
+                Accessories
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= PRODUCT GRID ================= -->
+
+        <div class="row g-4 products-grid">
+
+
+            <!-- ================= PRODUCT 01 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="1"
+                    data-category="Suitcases"
+                    data-price="189"
+                    data-new="true"
+                >
+
+                    <div class="shop-product-image">
+
+                        <span class="shop-badge">
+                            NEW
+                        </span>
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/lagguage.png"
+                                alt="Voyage Elite 24"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=1"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            HARD SHELL
+                        </p>
+
+                        <h3>
+                            Voyage Elite 24"
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $189
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 02 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="2"
+                    data-category="Suitcases"
+                    data-price="149"
+                >
+
+                    <div class="shop-product-image">
+
+                        <span class="shop-badge sale">
+                            SALE
+                        </span>
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/lagguage2.png"
+                                alt="Voyage Classic 20"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=2"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            HARD SHELL
+                        </p>
+
+                        <h3>
+                            Voyage Classic 20"
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $149
+                                <del>$179</del>
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 03 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="3"
+                    data-category="CARRY ON"
+                    data-price="99"
+                >
+
+                    <div class="shop-product-image">
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/1.png"
+                                alt="Voyage Urban Pack"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=3"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            CARRY ON
+                        </p>
+
+                        <h3>
+                            Voyage Urban Pack
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $99
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 04 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="4"
+                    data-category="CARRY ON"
+                    data-price="129"
+                >
+
+                    <div class="shop-product-image">
+
+                        <span class="shop-badge">
+                            BESTSELLER
+                        </span>
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/M.2.1.png"
+                                alt="Voyage Weekender"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=4"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            CARRY ON
+                        </p>
+
+                        <h3>
+                            Voyage Weekender
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $129
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 05 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="5"
+                    data-category="CARRY ON"
+                    data-price="229"
+                >
+
+                    <div class="shop-product-image">
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/mens5-removebg-preview.png"
+                                alt="Voyage Grand 28"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=5"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            CARRY ON
+                        </p>
+
+                        <h3>
+                            Voyage Grand 28"
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $229
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 06 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="6"
+                    data-category="CARRY ON"
+                    data-price="119"
+                    data-new="true"
+                >
+
+                    <div class="shop-product-image">
+
+                        <span class="shop-badge">
+                            NEW
+                        </span>
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/mens8-removebg-preview.png"
+                                alt="Voyage Explorer"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=6"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            CARRY ON
+                        </p>
+
+                        <h3>
+                            Voyage Explorer
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $119
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 07 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="7"
+                    data-category="BACKPACK"
+                    data-price="139"
+                >
+
+                    <div class="shop-product-image">
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/mens10-removebg-preview.png"
+                                alt="Voyage Weekend"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=7"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            BACKPACK
+                        </p>
+
+                        <h3>
+                            Voyage Weekend
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $139
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 08 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="8"
+                    data-category="BACKPACK"
+                    data-price="119"
+                >
+
+                    <div class="shop-product-image">
+
+                        <span class="shop-badge sale">
+                            SALE
+                        </span>
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/mens12-removebg-preview.png"
+                                alt="Voyage Mini 18"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=8"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            BACKPACK
+                        </p>
+
+                        <h3>
+                            Voyage Mini 18"
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $119
+                                <del>$149</del>
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 09 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="9"
+                    data-category="Travel Bags"
+                    data-price="209"
+                >
+
+                    <div class="shop-product-image">
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/bags4-removebg-preview.png"
+                                alt="Voyage Signature 26"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=9"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            TRAVEL BAG
+                        </p>
+
+                        <h3>
+                            Voyage Signature 26"
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $209
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 10 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="10"
+                    data-category="Travel Bags"
+                    data-price="109"
+                    data-new="true"
+                >
+
+                    <div class="shop-product-image">
+
+                        <span class="shop-badge">
+                            NEW
+                        </span>
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/bags1.png"
+                                alt="Voyage Metro Pack"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=10"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            TRAVEL BAG
+                        </p>
+
+                        <h3>
+                            Voyage Metro Pack
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $109
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 11 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="11"
+                    data-category="Travel Bags"
+                    data-price="89"
+                >
+
+                    <div class="shop-product-image">
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/bags5.png"
+                                alt="Voyage Carry Bag"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=11"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            TRAVEL BAG
+                        </p>
+
+                        <h3>
+                            Voyage Carry Bag
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $89
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT 12 ================= -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div
+                    class="shop-product-card"
+                    data-id="12"
+                    data-category="Travel Bags"
+                    data-price="249"
+                >
+
+                    <div class="shop-product-image">
+
+                        <span class="shop-badge">
+                            BESTSELLER
+                        </span>
+
+                        <button class="shop-wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <div class="shop-placeholder">
+
+                            <img
+                                src="assets/images/hikingbags2-removebg-preview.png"
+                                alt="Voyage Grand Pro 30"
+                            >
+
+                        </div>
+
+                        <a
+                            href="product-details.html?id=12"
+                            class="quick-view"
+                        >
+                            View Product
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="shop-product-info">
+
+                        <p>
+                            TRAVEL BAG
+                        </p>
+
+                        <h3>
+                            Voyage Grand Pro 30"
+                        </h3>
+
+                        <div class="shop-product-bottom">
+
+                            <strong>
+                                $249
+                            </strong>
+
+                            <button class="shop-add-cart">
+                                <i class="bi bi-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="footer"></div>
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Main JS -->
+
+<script src="js/main.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+
+</body>
+
+</html>

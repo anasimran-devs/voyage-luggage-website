@@ -1,0 +1,1580 @@
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+    padding-top: 190px;
+    padding-bottom: 110px;
+
+    background: #eeeee9;
+}
+
+.about-hero-content {
+    max-width: 900px;
+}
+
+.about-hero h1 {
+    font-size: clamp(60px, 9vw, 115px);
+
+    line-height: .88;
+
+    letter-spacing: -6px;
+
+    font-weight: 800;
+
+    margin-bottom: 35px;
+}
+
+.about-hero h1 span {
+    color: #777;
+}
+
+.about-hero-content > p:last-child {
+    max-width: 570px;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+
+/* =========================================
+   STORY
+========================================= */
+
+.about-story {
+    padding: 120px 0;
+
+    background: #fff;
+}
+
+
+/* Visual */
+
+.story-visual {
+    height: 560px;
+
+    background: #eeeeea;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.story-circle {
+    width: 420px;
+    height: 420px;
+
+    background: #deded8;
+
+    border-radius: 50%;
+
+    position: absolute;
+}
+
+.story-luggage {
+    width: 330px;
+    height: 430px;
+
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(-6deg);
+
+    animation:
+        luggageReveal 1s cubic-bezier(.16, 1, .3, 1) .2s both,
+        luggageFloat 5s ease-in-out 1.2s infinite;
+}
+
+.story-luggage img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;    
+
+    display: block;
+
+    filter: drop-shadow(
+        20px 25px 15px rgba(0, 0, 0, .12)
+    );
+}
+
+.story-luggage i {
+    font-size: 85px;
+
+    color: #444;
+}
+
+.story-label {
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    background: #111;
+
+    color: #fff;
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    z-index: 3;
+}
+
+.story-label span {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #999;
+}
+
+.story-label strong {
+    font-size: 18px;
+}
+
+
+
+/* Story Content */
+
+.story-content {
+    padding-left: 40px;
+}
+
+.story-content h2 {
+    font-size: clamp(40px, 5vw, 62px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 800;
+
+    margin-bottom: 30px;
+}
+
+.story-content h2 span {
+    color: #777;
+}
+
+.story-content p:not(.section-label) {
+    max-width: 500px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.values-section {
+    padding: 110px 0;
+
+    background: #f7f7f5;
+}
+
+.value-card {
+    min-height: 330px;
+
+    background: #fff;
+
+    border: 1px solid #e4e4df;
+
+    padding: 35px;
+
+    position: relative;
+
+    transition: .4s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, .07);
+}
+
+.value-number {
+    position: absolute;
+
+    top: 25px;
+    right: 25px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #bbb;
+}
+
+.value-icon {
+    width: 65px;
+    height: 65px;
+
+    background: #eeeeea;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    transition: .4s ease;
+}
+
+.value-icon i {
+    font-size: 26px;
+}
+
+.value-card:hover .value-icon {
+    background: #111;
+
+    color: #fff;
+
+    transform: rotate(-5deg);
+}
+
+.value-card h3 {
+    font-size: 21px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    max-width: 330px;
+}
+
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.about-stats {
+    padding: 75px 0;
+
+    background: #111;
+
+    color: #fff;
+}
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+}
+
+.about-stat {
+    padding: 20px 30px;
+
+    border-right: 1px solid #333;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.about-stat:last-child {
+    border-right: none;
+}
+
+.about-stat strong {
+    font-size: 45px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.about-stat span {
+    color: #888;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================================
+   MISSION
+========================================= */
+
+.mission-section {
+    padding: 110px 0;
+
+    background: #fff;
+}
+
+.mission-box {
+    min-height: 520px;
+
+    background: #deded8;
+
+    padding: 75px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.mission-content {
+    max-width: 550px;
+}
+
+.mission-content h2 {
+    font-size: clamp(50px, 6vw, 78px);
+
+    line-height: .9;
+
+    letter-spacing: -4px;
+
+    font-weight: 800;
+
+    margin-bottom: 28px;
+}
+
+.mission-content h2 span {
+    color: #777;
+}
+
+.mission-content > p:not(.section-label) {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    max-width: 450px;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .about-hero {
+        padding-top: 160px;
+    }
+
+    .story-content {
+        padding-left: 0;
+
+        padding-top: 20px;
+    }
+
+    .story-visual {
+        height: 500px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-stat:nth-child(2) {
+        border-right: none;
+    }
+
+    .about-stat:nth-child(-n+2) {
+        border-bottom: 1px solid #333;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .about-hero {
+        padding-top: 145px;
+
+        padding-bottom: 75px;
+    }
+
+    .about-hero h1 {
+        font-size: 62px;
+
+        letter-spacing: -3px;
+    }
+
+    .about-story {
+        padding: 80px 0;
+    }
+
+    .story-visual {
+        height: 430px;
+    }
+
+    .story-circle {
+        width: 320px;
+        height: 320px;
+    }
+
+    .story-luggage {
+        width: 240px;
+        height: 330px;
+    }
+
+
+    .story-luggage i {
+        font-size: 65px;
+    }
+
+    .values-section,
+    .mission-section {
+        padding: 80px 0;
+    }
+
+    .mission-box {
+        padding: 50px 30px;
+
+        min-height: 450px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .about-hero h1 {
+        font-size: 50px;
+    }
+
+    .story-visual {
+        height: 380px;
+    }
+
+    .story-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .story-luggage {
+        width: 210px;
+        height: 290px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stat {
+        border-right: none;
+
+        border-bottom: 1px solid #333;
+    }
+
+    .about-stat:last-child {
+        border-bottom: none;
+    }
+
+    .mission-box {
+        padding: 45px 25px;
+    }
+
+}
+/* =========================================
+   VOYAGE — ABOUT PAGE
+========================================= */
+
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+    padding-top: 190px;
+    padding-bottom: 110px;
+
+    background: #eeeee9;
+
+    overflow: hidden;
+}
+
+.about-hero-content {
+    max-width: 900px;
+
+    animation: aboutHeroReveal 1s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.about-hero .section-label {
+    animation: fadeUp .7s ease .1s both;
+}
+
+.about-hero h1 {
+    font-size: clamp(60px, 9vw, 115px);
+
+    line-height: .88;
+
+    letter-spacing: -6px;
+
+    font-weight: 800;
+
+    margin-bottom: 35px;
+
+    animation: fadeUp .9s cubic-bezier(.16, 1, .3, 1) .15s both;
+}
+
+.about-hero h1 span {
+    color: #777;
+
+    display: inline-block;
+
+    animation: heroWordReveal 1s cubic-bezier(.16, 1, .3, 1) .3s both;
+}
+
+.about-hero-content > p:last-child {
+    max-width: 570px;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    animation: fadeUp .8s ease .45s both;
+}
+
+
+
+/* =========================================
+   STORY
+========================================= */
+
+.about-story {
+    padding: 120px 0;
+
+    background: #fff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   STORY VISUAL
+========================================= */
+
+.story-visual {
+    height: 560px;
+
+    background: #eeeeea;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* Circle */
+
+.story-circle {
+    width: 420px;
+    height: 420px;
+
+    background: #deded8;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    animation:
+        circleReveal 1.1s cubic-bezier(.16, 1, .3, 1) both,
+        circleFloat 7s ease-in-out 1.1s infinite;
+}
+
+
+/* Luggage */
+
+.story-luggage {
+    width: 230px;
+    height: 360px;
+
+    border: 3px solid #444;
+
+    border-radius: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+
+    transform: rotate(-6deg);
+
+    box-shadow:
+        25px 25px 0 rgba(0, 0, 0, .07);
+
+    animation:
+        luggageReveal 1s cubic-bezier(.16, 1, .3, 1) .2s both,
+        luggageFloat 5s ease-in-out 1.2s infinite;
+}
+
+.story-luggage::before {
+    content: "";
+
+    position: absolute;
+
+    width: 85px;
+    height: 35px;
+
+    border: 3px solid #444;
+
+    border-bottom: none;
+
+    border-radius: 15px 15px 0 0;
+
+    top: -35px;
+}
+
+.story-luggage i {
+    font-size: 85px;
+
+    color: #444;
+
+    animation: iconPulse 4s ease-in-out 2s infinite;
+}
+
+
+/* Story Label */
+
+.story-label {
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+
+    background: #111;
+
+    color: #fff;
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    z-index: 3;
+
+    animation: labelReveal .8s cubic-bezier(.16, 1, .3, 1) .7s both;
+
+    transition: .35s ease;
+}
+
+.story-label:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, .15);
+}
+
+.story-label span {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #999;
+}
+
+.story-label strong {
+    font-size: 18px;
+}
+
+
+
+/* =========================================
+   STORY CONTENT
+========================================= */
+
+.story-content {
+    padding-left: 40px;
+
+    animation: storyContentReveal .9s cubic-bezier(.16, 1, .3, 1) .2s both;
+}
+
+.story-content .section-label {
+    animation: fadeUp .7s ease .35s both;
+}
+
+.story-content h2 {
+    font-size: clamp(40px, 5vw, 62px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 800;
+
+    margin-bottom: 30px;
+
+    animation: fadeUp .8s ease .4s both;
+}
+
+.story-content h2 span {
+    color: #777;
+
+    display: inline-block;
+}
+
+.story-content p:not(.section-label) {
+    max-width: 500px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+
+    animation: fadeUp .8s ease .5s both;
+}
+
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.values-section {
+    padding: 110px 0;
+
+    background: #f7f7f5;
+
+    overflow: hidden;
+}
+
+.values-section .section-heading {
+    animation: fadeUp .8s ease both;
+}
+
+
+/* Value Card */
+
+.value-card {
+    min-height: 330px;
+
+    background: #fff;
+
+    border: 1px solid #e4e4df;
+
+    padding: 35px;
+
+    position: relative;
+
+    transition:
+        transform .45s cubic-bezier(.16, 1, .3, 1),
+        box-shadow .45s ease,
+        border-color .3s ease;
+
+    animation: cardReveal .8s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+
+/* Stagger */
+
+.value-card:nth-child(1) {
+    animation-delay: .1s;
+}
+
+.value-card:nth-child(2) {
+    animation-delay: .22s;
+}
+
+.value-card:nth-child(3) {
+    animation-delay: .34s;
+}
+
+
+.value-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #d4d4ce;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .09);
+}
+
+
+/* Number */
+
+.value-number {
+    position: absolute;
+
+    top: 25px;
+    right: 25px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #bbb;
+
+    transition: .3s ease;
+}
+
+.value-card:hover .value-number {
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* Icon */
+
+.value-icon {
+    width: 65px;
+    height: 65px;
+
+    background: #eeeeea;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    transition:
+        background .4s ease,
+        color .4s ease,
+        transform .45s cubic-bezier(.16, 1, .3, 1);
+}
+
+.value-icon i {
+    font-size: 26px;
+
+    transition: transform .4s ease;
+}
+
+.value-card:hover .value-icon {
+    background: #111;
+
+    color: #fff;
+
+    transform: rotate(-5deg) scale(1.05);
+}
+
+.value-card:hover .value-icon i {
+    transform: scale(1.12) rotate(5deg);
+}
+
+
+/* Text */
+
+.value-card h3 {
+    font-size: 21px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    transition: transform .35s ease;
+}
+
+.value-card:hover h3 {
+    transform: translateX(3px);
+}
+
+.value-card p {
+    color: #777;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    max-width: 330px;
+}
+
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.about-stats {
+    padding: 75px 0;
+
+    background: #111;
+
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+}
+
+.about-stat {
+    padding: 20px 30px;
+
+    border-right: 1px solid #333;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    animation: statReveal .8s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.about-stat:nth-child(1) {
+    animation-delay: .05s;
+}
+
+.about-stat:nth-child(2) {
+    animation-delay: .15s;
+}
+
+.about-stat:nth-child(3) {
+    animation-delay: .25s;
+}
+
+.about-stat:nth-child(4) {
+    animation-delay: .35s;
+}
+
+.about-stat:last-child {
+    border-right: none;
+}
+
+.about-stat strong {
+    font-size: 45px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+
+    transition: transform .35s ease;
+}
+
+.about-stat span {
+    color: #888;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+.about-stat:hover strong {
+    transform: translateY(-4px);
+}
+
+
+
+/* =========================================
+   MISSION
+========================================= */
+
+.mission-section {
+    padding: 110px 0;
+
+    background: #fff;
+}
+
+.mission-box {
+    min-height: 520px;
+
+    background: #deded8;
+
+    padding: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    animation: missionReveal 1s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+
+/* Decorative circle */
+
+.mission-box::after {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(0, 0, 0, .08);
+
+    right: -120px;
+    bottom: -180px;
+
+    transition: transform 1s ease;
+}
+
+.mission-box:hover::after {
+    transform: scale(1.15);
+}
+
+
+.mission-content {
+    max-width: 550px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.mission-content .section-label {
+    animation: fadeUp .7s ease .2s both;
+}
+
+.mission-content h2 {
+    font-size: clamp(50px, 6vw, 78px);
+
+    line-height: .9;
+
+    letter-spacing: -4px;
+
+    font-weight: 800;
+
+    margin-bottom: 28px;
+
+    animation: fadeUp .8s ease .3s both;
+}
+
+.mission-content h2 span {
+    color: #777;
+}
+
+.mission-content > p:not(.section-label) {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    max-width: 450px;
+
+    margin-bottom: 30px;
+
+    animation: fadeUp .8s ease .4s both;
+}
+
+
+/* Mission Button */
+
+.mission-content .btn-main {
+    animation: fadeUp .8s ease .5s both;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.mission-content .btn-main:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, .15);
+}
+
+
+
+/* =========================================
+   KEYFRAMES
+========================================= */
+
+
+/* General */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Hero */
+
+@keyframes aboutHeroReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes heroWordReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Story */
+
+@keyframes circleReveal {
+
+    from {
+        opacity: 0;
+        transform: scale(.65);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+@keyframes circleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+@keyframes luggageReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(50px)
+            rotate(-12deg)
+            scale(.9);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            rotate(-6deg)
+            scale(1);
+    }
+
+}
+
+
+@keyframes luggageFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(-6deg);
+    }
+
+    50% {
+        transform:
+            translateY(-10px)
+            rotate(-4deg);
+    }
+
+}
+
+
+@keyframes iconPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+
+}
+
+
+@keyframes labelReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+@keyframes storyContentReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* Cards */
+
+@keyframes cardReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Stats */
+
+@keyframes statReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Mission */
+
+@keyframes missionReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .about-hero {
+        padding-top: 160px;
+    }
+
+
+    .story-content {
+        padding-left: 0;
+
+        padding-top: 20px;
+    }
+
+
+    .story-visual {
+        height: 500px;
+    }
+
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .about-stat:nth-child(2) {
+        border-right: none;
+    }
+
+
+    .about-stat:nth-child(-n+2) {
+        border-bottom: 1px solid #333;
+    }
+
+}
+
+
+
+/* =========================================
+   TABLET / MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .about-hero {
+        padding-top: 145px;
+
+        padding-bottom: 75px;
+    }
+
+
+    .about-hero h1 {
+        font-size: 62px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .about-story {
+        padding: 80px 0;
+    }
+
+
+    .story-visual {
+        height: 430px;
+    }
+
+
+    .story-circle {
+        width: 320px;
+        height: 320px;
+    }
+
+
+    .story-luggage {
+        width: 180px;
+        height: 285px;
+    }
+
+
+    .story-luggage i {
+        font-size: 65px;
+    }
+
+
+    .story-content {
+        padding-top: 35px;
+    }
+
+
+    .values-section,
+    .mission-section {
+        padding: 80px 0;
+    }
+
+
+    .mission-box {
+        padding: 50px 30px;
+
+        min-height: 450px;
+    }
+
+
+    .mission-box::after {
+        width: 300px;
+        height: 300px;
+
+        right: -120px;
+        bottom: -130px;
+    }
+
+}
+
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575px) {
+
+    .about-hero h1 {
+        font-size: 50px;
+    }
+
+
+    .story-visual {
+        height: 380px;
+    }
+
+
+    .story-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    .story-luggage {
+        width: 155px;
+        height: 245px;
+    }
+
+
+    .story-luggage i {
+        font-size: 55px;
+    }
+
+
+    .story-label {
+        right: 15px;
+        bottom: 15px;
+
+        padding: 14px 17px;
+    }
+
+
+    .story-label strong {
+        font-size: 16px;
+    }
+
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-stat {
+        border-right: none;
+
+        border-bottom: 1px solid #333;
+    }
+
+
+    .about-stat:last-child {
+        border-bottom: none;
+    }
+
+
+    .mission-box {
+        padding: 45px 25px;
+    }
+
+
+    .mission-content h2 {
+        letter-spacing: -3px;
+    }
+
+}
+
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+
+        scroll-behavior: auto !important;
+    }
+
+}

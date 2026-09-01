@@ -1,0 +1,735 @@
+/* =========================================
+   BRANDS HERO
+========================================= */
+
+.brands-hero {
+    padding-top: 190px;
+    padding-bottom: 110px;
+
+    background: #eeeee9;
+}
+
+.brands-hero-content {
+    max-width: 900px;
+}
+
+.brands-hero h1 {
+    font-size: clamp(60px, 9vw, 115px);
+
+    line-height: .88;
+
+    letter-spacing: -6px;
+
+    font-weight: 800;
+
+    margin-bottom: 35px;
+}
+
+.brands-hero h1 span {
+    color: #777;
+}
+
+.brands-hero-content > p:last-child {
+    max-width: 560px;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+
+/* =========================================
+   BRANDS INTRO
+========================================= */
+
+.brands-intro {
+    padding: 100px 0;
+
+    background: #fff;
+}
+
+.brands-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 100px;
+}
+
+.brands-intro-grid h2 {
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.brands-intro-grid h2 span {
+    color: #777;
+}
+
+.brands-intro-grid > div:last-child p {
+    max-width: 500px;
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+
+/* =========================================
+   BRANDS SECTION
+========================================= */
+
+.brands-section {
+    padding: 110px 0 120px;
+
+    background: #f7f7f5;
+}
+
+
+
+/* =========================================
+   BRAND CARD
+========================================= */
+
+.brand-card {
+    min-height: 310px;
+
+    background: #fff;
+
+    border: 1px solid #e2e2de;
+
+    padding: 40px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    transition: .4s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-8px);
+
+    background: #111;
+
+    color: #fff;
+
+    border-color: #111;
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, .1);
+}
+
+
+/* Number */
+
+.brand-number {
+    position: absolute;
+
+    top: 25px;
+    right: 28px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    color: #bbb;
+
+    transition: .3s ease;
+}
+
+.brand-card:hover .brand-number {
+    color: #666;
+}
+
+
+/* Logo */
+
+.brand-logo {
+    font-size: 32px;
+
+    line-height: 1;
+
+    letter-spacing: 3px;
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+
+    transition: .3s ease;
+}
+
+.brand-card p {
+    color: #999;
+
+    font-size: 11px;
+
+    margin: 0;
+
+    transition: .3s ease;
+}
+
+.brand-card:hover p {
+    color: #888;
+}
+
+
+/* Arrow */
+
+.brand-arrow {
+    position: absolute;
+
+    bottom: 25px;
+    right: 28px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid #ddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .35s ease;
+}
+
+.brand-card:hover .brand-arrow {
+    border-color: #555;
+
+    transform: translate(3px, -3px);
+}
+
+
+
+/* =========================================
+   BRAND PROMO
+========================================= */
+
+.brand-promo {
+    padding: 0 0 110px;
+
+    background: #f7f7f5;
+}
+
+.brand-promo-box {
+    min-height: 500px;
+
+    background: #deded8;
+
+    padding: 75px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.brand-promo-content {
+    max-width: 600px;
+}
+
+.brand-promo-content h2 {
+    font-size: clamp(50px, 6vw, 78px);
+
+    line-height: .9;
+
+    letter-spacing: -4px;
+
+    font-weight: 800;
+
+    margin-bottom: 28px;
+}
+
+.brand-promo-content h2 span {
+    color: #777;
+}
+
+.brand-promo-content > p:not(.section-label) {
+    max-width: 470px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .brands-hero {
+        padding-top: 160px;
+    }
+
+    .brands-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .brands-hero {
+        padding-top: 145px;
+
+        padding-bottom: 75px;
+    }
+
+    .brands-hero h1 {
+        font-size: 62px;
+
+        letter-spacing: -3px;
+    }
+
+    .brands-intro {
+        padding: 80px 0;
+    }
+
+    .brands-section {
+        padding: 80px 0;
+    }
+
+    .brand-promo {
+        padding-bottom: 80px;
+    }
+
+    .brand-promo-box {
+        padding: 50px 30px;
+
+        min-height: 450px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .brands-hero h1 {
+        font-size: 50px;
+    }
+
+    .brand-card {
+        min-height: 270px;
+
+        padding: 30px;
+    }
+
+    .brand-logo {
+        font-size: 27px;
+    }
+
+    .brand-promo-box {
+        padding: 45px 25px;
+    }
+
+}
+/* =========================================
+   VOYAGE — BRANDS ANIMATIONS
+========================================= */
+
+/* Initial reveal state */
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(45px);
+    transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Fade from left */
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-45px);
+    transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Fade from right */
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(45px);
+    transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* =========================================
+   HERO ANIMATION
+========================================= */
+
+.brands-hero-content .section-label {
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation: brandsFadeUp .7s ease forwards;
+}
+
+.brands-hero h1 {
+    opacity: 0;
+    transform: translateY(35px);
+
+    animation: brandsFadeUp .8s ease .15s forwards;
+}
+
+.brands-hero-content > p:last-child {
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation: brandsFadeUp .8s ease .3s forwards;
+}
+
+
+@keyframes brandsFadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   BRAND CARDS
+========================================= */
+
+.brand-card {
+    opacity: 0;
+    transform: translateY(40px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s cubic-bezier(.2,.8,.2,1),
+        background .4s ease,
+        color .4s ease,
+        box-shadow .4s ease;
+}
+
+.brand-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Stagger */
+
+.brand-card:nth-child(1) {
+    transition-delay: .05s;
+}
+
+.brand-card:nth-child(2) {
+    transition-delay: .12s;
+}
+
+.brand-card:nth-child(3) {
+    transition-delay: .19s;
+}
+
+.brand-card:nth-child(4) {
+    transition-delay: .26s;
+}
+
+.brand-card:nth-child(5) {
+    transition-delay: .33s;
+}
+
+.brand-card:nth-child(6) {
+    transition-delay: .40s;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.brand-card:hover {
+    transform: translateY(-10px) !important;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .12);
+}
+
+
+.brand-logo {
+    transform: translateX(0);
+
+    transition:
+        transform .4s ease,
+        color .4s ease;
+}
+
+.brand-card:hover .brand-logo {
+    transform: translateX(8px);
+    color: #fff;
+}
+
+
+.brand-card p {
+    transition:
+        color .35s ease,
+        transform .35s ease;
+}
+
+.brand-card:hover p {
+    transform: translateX(8px);
+}
+
+
+.brand-number {
+    transition:
+        color .3s ease,
+        transform .4s ease;
+}
+
+.brand-card:hover .brand-number {
+    transform: translateY(-3px);
+}
+
+
+.brand-arrow {
+    transition:
+        transform .4s cubic-bezier(.2,.8,.2,1),
+        border-color .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.brand-card:hover .brand-arrow {
+    transform: translate(5px, -5px);
+    background: #fff;
+    color: #111;
+    border-color: #fff;
+}
+
+
+/* =========================================
+   INTRO ANIMATION
+========================================= */
+
+.brands-intro-grid > div:first-child {
+    opacity: 0;
+    transform: translateX(-35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.brands-intro-grid > div:last-child {
+    opacity: 0;
+    transform: translateX(35px);
+
+    transition:
+        opacity .8s ease .15s,
+        transform .8s ease .15s;
+}
+
+.brands-intro-grid.show > div {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.brands-section .section-heading {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.brands-section .section-heading.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   PROMO ANIMATION
+========================================= */
+
+.brand-promo-box {
+    opacity: 0;
+    transform: translateY(45px) scale(.98);
+
+    transition:
+        opacity .9s ease,
+        transform .9s cubic-bezier(.2,.8,.2,1);
+}
+
+.brand-promo-box.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+/* Promo content */
+
+.brand-promo-content {
+    opacity: 0;
+    transform: translateX(-35px);
+
+    transition:
+        opacity .8s ease .15s,
+        transform .8s ease .15s;
+}
+
+.brand-promo-box.show .brand-promo-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.brand-promo .btn-main {
+    transition:
+        transform .3s ease,
+        background .3s ease;
+}
+
+.brand-promo .btn-main:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .brand-card,
+    .reveal-up,
+    .reveal-left,
+    .reveal-right,
+    .brand-promo-box,
+    .brand-promo-content,
+    .brands-intro-grid > div,
+    .brands-section .section-heading {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .brands-hero-content .section-label,
+    .brands-hero h1,
+    .brands-hero-content > p:last-child {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+
+}
+/* =========================================
+   MOBILE HORIZONTAL OVERFLOW FIX
+========================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.brands-hero,
+.brands-intro,
+.brands-section,
+.brand-promo {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.brands-hero-content,
+.brands-intro-grid,
+.brand-promo-box {
+    max-width: 100%;
+}
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .brands-hero {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .brands-hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    .brands-hero-content > p:last-child {
+        max-width: 100%;
+    }
+
+}
