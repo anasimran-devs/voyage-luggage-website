@@ -11,7 +11,7 @@ Voyage provides a multi-page shopping experience for browsing luggage products, 
 
 ## 🌐 Live Demo
 
-🚀 Live demo coming soon.
+[View Live Website](https://voyage-luggage-website.netlify.app)
 
 ---
 
